@@ -116,7 +116,7 @@ library(ggplot2)
 dsHistWD$class <- "workday"
 dsHistWE$class <- "weekend"
 dsHistAll <- rbind(dsHistWD, dsHistWE)
-qplot(interval, steps, data=dsHistAll, facets = class~., main="Weekend vs. Workday")
+qplot(interval, steps, data=dsHistAll, facets = class~., main="Weekend vs. Workday", type="l")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
